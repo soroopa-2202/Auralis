@@ -1,2 +1,35 @@
-# Auralis
-Aurallis is a Generative AI PDF assistant that helps users quickly understand long documents. It extracts text, creates clear summaries, highlights key points, and allows chat-based questioning for deeper insights. Built with advanced AI and RAG, it saves time and makes learning and document analysis easier and smarter.
+# 📄 Aurallis – Generative AI Powered PDF Assistant
+
+Aurallis is an advanced AI application that analyzes PDF documents using
+Retrieval-Augmented Generation (RAG). It can extract text, generate summaries,
+highlight key insights, and support conversational Q&A with any uploaded file.
+
+---
+
+## ✨ Features
+| Feature | Description |
+|--------|-------------|
+| PDF Text Extraction | Reads and processes content automatically |
+| Multi-Style Summaries | Short, detailed, or bullet-format summaries |
+| Key Point Highlighting | Extracts 5–7 main ideas with clean HTML formatting |
+| Chat with Your PDF | Ask questions and get context-aware responses |
+| Built with RAG | Uses FAISS + embeddings for accurate answers |
+
+---
+
+## 🧠 Tech Stack
+- Python, Streamlit
+- Groq LLM + LangChain
+- HuggingFace embeddings
+- FAISS Vector Search
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+git clone https://github.com/<your-username>/Aurallis-GenAI-PDF-Assistant.git
+cd Aurallis-GenAI-PDF-Assistant
+pip install -r requirements.txt
+cp .env.example .env   # Add your Groq API key
+streamlit run app.py
